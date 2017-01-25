@@ -8,16 +8,17 @@ Prerequisites
 How This Repo Should Be Used
 ============================
 - Clone this repo with `git clone https://github.com/u-blox/mbedOSLua.git`.
+- `cd` to the `mbedOSLua` directory.
 - Run `mbed update` to retrieve the mbedOS source code.
 - Run `mbed compile`, giving it your choice of target and compiler, e.g. `mbed compile -m K64F -t ARM`.
 - Copy the resulting `.bin` onto your board.
 - Open a terminal to the board with the following settings:
-  - baud rate 9600
-  - no flow control
-  - local echo ON
+  - baud rate 9600,
+  - no flow control,
+  - local echo ON,
   - make sure that the line-ending that is *sent* is LF; note that PuTTY *cannot* be persuaded to do this, Teraterm can.
 - Reset the board and you should get a Lua prompt.
-- Type characters and they will be interpreted as Lua commands, e.g. `"print("Hello World")"`.
+- Type characters and they will be interpreted as Lua commands, e.g. `print("Hello World")`.
 
 How This Repo Was Created
 =========================
